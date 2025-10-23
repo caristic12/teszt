@@ -1,1 +1,17 @@
-aaaaaaaaaaaaaaaaaaaaaa
+import random
+
+def check_if_correct(x,y):
+    if x > y:
+        return "nagyobb"
+    elif y > x:
+        return "kisebb"
+    else:
+        return "helyes"
+    
+x = random.randint(0,100)
+
+while True:
+    y =input("")
+    if check_if_correct(x,y)=="helyes":
+        break
+print("helyes")
